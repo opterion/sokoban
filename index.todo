@@ -1,0 +1,20 @@
+[ ] #fix: make the same bg on image for player/target and empty cell
+[ ] #feature: config webpack dev server hot reload + build
+[ ] #feature: basic game screens
+[ ] #feature: transitions between levels
+[ ] #feature: Levels Editor
+[ ] #feature: Skins Editor
+
+
+Architecture:
+SokobanApp
+  Storage
+  History
+  EventLoop
+  GameEngine
+  Level
+  HTMLTableRenderer
+    Skins
+      Skin <--> Level
+  [CanvasRenderer]
+  [HTMLTableSymbolsRenderer]
